@@ -3,7 +3,7 @@ Unit tests for the calculator library
 """
 
 
-from calculator import add, subtract, multiply
+from calculator import add, subtract, multiply, divide
 
 
 class TestCalculator:
@@ -15,3 +15,6 @@ class TestCalculator:
 
     def test_multiplication(self):
         assert 100 == multiply(10, 10)
+
+    def test_division(self):
+        assert 4 == divide(20, 5)
